@@ -1,23 +1,26 @@
 ''' Ultimate Card Generater by Kurtis Raymond (kraymond (at) sfu.ca)
     Excel .xlsx file + Template .svg -> Generated Cards
 
-    This script requires the each data ID matches
-    is the column is labeled .xlsx, then the variable
-    should be the same in the template file.
-    ie,
+    This script requires the each column attribute in the .xlsx doc
+    matches the text inside a field in the .svg template.
+    
+    For example the .xlsx file has the following format,
     1 | VAR_NAME
     2 | data_val1
     3 | data_val2
     . |     .
     . |     .
 
-    And VAR_NAME should be the same text field in the card template
-    The actual chosen name for VAR_NAME should be unique and
-    not match any of the other xml code in the template file.
+    And VAR_NAME should be the same text field in the card template.
+    
+    It is important that VAR_NAME is unique and not match any of the
+    other xml code in the template file.
 
     Future work:
-    - Extend this to work with different card types, ie. VAR_TEMP in xlsx file
-    - Create a more robust way of changing data in a .svg file
+    - Extend this to work with different card types which require different
+        template files, ie. VAR_TEMP in xlsx file
+    - Create a more robust way of changing data in a .svg file, rather than
+        finding and replacing text
 '''
 
 
